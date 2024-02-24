@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3C4048"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="20dp"
+        android:gravity="right|top|center_vertical"
+        android:text=""
+        android:textColor="#FFFFFF"
+        android:textSize="50dp"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:gravity="center"
+        android:stretchColumns="*"
+        app:backgroundTint="@null"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+        <!-- Row 1 -->
+        <TableRow>
+
+            <Button
+                android:id="@+id/btn1"
+                style="@style/MyButtonStyle"
+                android:text="1" />
+
+            <Button
+                android:id="@+id/btn2"
+                style="@style/MyButtonStyle"
+                android:text="2" />
+
+            <Button
+                android:id="@+id/btn3"
+                style="@style/MyButtonStyle"
+                android:text="3" />
+
+            <Button
+                android:id="@+id/btnDivide"
+                style="@style/OperatorStyle"
+                android:text="/" />
+        </TableRow>
+
+        <!-- Row 2 -->
+        <TableRow>
+
+            <Button
+                android:id="@+id/btn4"
+                style="@style/MyButtonStyle"
+                android:text="4" />
+
+            <Button
+                android:id="@+id/btn5"
+                style="@style/MyButtonStyle"
+                android:text="5" />
+
+            <Button
+                android:id="@+id/btn6"
+                style="@style/MyButtonStyle"
+                android:text="6" />
+
+            <Button
+                android:id="@+id/btnMultiply"
+                style="@style/OperatorStyle"
+                android:text="*" />
+        </TableRow>
+
+        <!-- Row 3 -->
+        <TableRow>
+
+            <Button
+                android:id="@+id/btn7"
+                style="@style/MyButtonStyle"
+                android:text="7" />
+
+            <Button
+                android:id="@+id/btn8"
+                style="@style/MyButtonStyle"
+                android:text="8" />
+
+            <Button
+                android:id="@+id/btn9"
+                style="@style/MyButtonStyle"
+                android:text="9" />
+
+            <Button
+                android:id="@+id/btnSubstract"
+                style="@style/OperatorStyle"
+                android:text="-" />
+        </TableRow>
+
+        <!-- Row 4 -->
+        <TableRow>
+
+            <Button
+                android:id="@+id/btn0"
+                style="@style/MyButtonStyle"
+                android:layout_span="1"
+                android:text="0" />
+
+            <Button
+                android:id="@+id/btnDecimal"
+                style="@style/MyButtonStyle"
+                android:text="." />
+
+            <Button
+                android:id="@+id/btnAc"
+                style="@style/MyButtonStyle"
+                android:text="AC" />
+
+            <Button
+                android:id="@+id/btnSum"
+                style="@style/OperatorStyle"
+                android:text="+" />
+
+        </TableRow>
+
+        <!-- Row 5 -->
+        <TableRow>
+
+            <Button
+                android:id="@+id/btnEqual"
+                style="@style/OperatorStyle"
+                android:layout_span="4"
+                android:background="#00ABB3"
+                android:text="="
+                android:textColor="#0D47A1" />
+        </TableRow>
+    </TableLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
